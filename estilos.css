@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+:root {
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.grilla {
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+}
+
+
+
+.contenedor {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1em;
+}
+
+.contenedor > div {
+    padding: 1em;
+}
+
+.contenedor > div:hover {
+    border: 1px solid rgba(170, 167, 13, 0.829);
+}
+
+.encabezado {
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+
+.encabezado::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('computer.jpg');
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+.encabezado__cta{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 500;
+    transition: background-color .3s;
+}
+
+.encabezado__cta:hover{
+    background-color: #fff;
+    color: #1e3c72;
+}
+
+button {
+    background-color: #47a386;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+}
+  
+/* Ventana Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111111bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s .8s;
+}
+
+.modal--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    
+}
+
+.modal__container {
+    margin: auto;
+    width: 90%;
+    max-width: 600px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 3em 2.5em;
+    display: grid;
+    gap: 1em;
+    place-items: center;
+    grid-auto-columns: 100%;
+    transform: var(--transform);
+    transition: var(--transition);
+}
+
+.modal__title {
+    font-size: 2.5rem;
+}
+
+.modal__close {
+    text-decoration: none;
+    color:#fff;
+    background-color: #f26250;
+    padding: 1em 3em;
+    border: 1px solid;
+    border-radius: 6px;
+    display: inline-block;
+    font-weight: 300;
+    transition: background-color .3s;
+}
+
+.modal__close:hover {
+    color: #f26250;
+    background-color: #fff;
+}
+
+/* Menú de navegación */
+
+.encabezado_nav-enlace {
+    display: inline-flex;
+    background: rgb(42, 19, 122);
+    color: #fff;
+    padding: 10px 30px;
+    float: right;
+    text-decoration: none;
+}
+
+.encabezado_nav-enlace:hover {
+    background: #19538a;
+}
+
+
+.fila1 {
+    background-color: #70d4f3;
+}
+
+.fila2 {
+    background-color: #e870f3;
+}
+
+.fila3 {
+    background-color: #e6f370;
+}
+
+.fila4 {
+    background-color: #74a355
+}
+
+.fila5 {
+    background-color: #f3b670;
+}
+
+.datos__alumno {
+    grid-template-columns: 100%;
+    align-items: center;
+    background: #02192e;
+    color: #fff;
+    font-size: 14px;
+}
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Roberto Rodriguez</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+
+ </head>
+<body>
+    <div class="grilla">
+        <header class="encabezado">
+            <div class="encabezado_title">
+                <nav>
+                    <a href="#contacto" class="encabezado_nav-enlace">Contacto</a>
+                    <a href="#datos" class="encabezado_nav-enlace">Datos Personales</a>
+                    <a href="#experiencia" class="encabezado_nav-enlace">Experiencia laboral</a>
+                    <a href="#estudios" class="encabezado_nav-enlace">Estudios</a>
+                    <a href="#sobremi" class="encabezado_nav-enlace">Sobre mí</a>
+                </nav>                
+                <img src="foto personal.jpg" alt="Texto alternativo"/>
+                <h1>Roberto Rodríguez</h1>
+                <h2>Programador / Desarrollador</h2>
+                <h3>Sistemas de Gestión</h3>
+                <a href="#" class="encabezado__cta" type="submit">Libro de Visitas</a>
+
+            </div>
+        </header>
+        
+
+        
+        <div class="contenedor">
+            <div class="fila1" id="sobremi">
+                <h2 class="subtitulo">Sobre Mí</h2>
+            </div>    
+            <div class="fila1">
+                <p>Programador con más de 30 años de experiencia en el diseño y desarrollo de Sistemas de Gestión Comercial y Administrativo.</p>
+                <p>Capaz de trabajar en modalidad independiente o formando parte de un equipo de trabajo.</p>
+                <p>En mis comienzos hice desarrollos utilizando lenguajes como RPG II y COBOL.</p>
+                <P>Más tarde, y como autodidacta incorporé lenguajes como Visual FoxPro y manejo de Bases de Datos Relacionales.</P>
+            </div>
+            
+ 
+            <div class="fila2" id="estudios">
+                <h2 class="subtitulo">Estudios</h2>
+                <h3 class="estudios">Educación y capacitación en informática</h3>
+            </div>
+            
+            <div class="fila2">
+                <dl> 
+                    <li>Educación primaria: en el colegio La Salle de la ciudad de Santa Fe.</li>
+                    <li>Educación secundaria: en la Escuela Industrial Superior de la ciudad de Santa Fe.</li>
+                    <li>Cursos de programación en el Instituto de Capacitación en Informática de Santa Fe: Lenguajes Cobol, RPG II y Gesal.</li>
+                    <li>Cursos de programación en el Instituto Integral de Capacitación de Córdoba: Lenguajes Java, Javascript y HTML.</li>
+                </dl>
+            </div>
+
+            <div class="fila3" id="experiencia">
+                <h2 class="subtitulo">Experiencia laboral</h2>
+            </div>    
+            <div class="fila3">
+                <dl>
+                    <li>Desde 1990 a 2000 desarrollo y mantenimiento de Sistemas de Gestión, para la empresa CAMOS, en relación de dependencia.</li>
+                    <li>Como Freelancer, desarrollo y mantenimiento de Sistemas de Gestión Contable.</li>
+                    <li>Capacitación de usuarios, para el manejo de los Sistemas desarrollados.</li>
+                </dl>
+            </div>           
+
+            <div class="fila4" id="datos">
+                <h2 class="subtitulo">Datos personales</h2>
+            
+            </div>
+            
+            <div class="fila4"> 
+                <dl> 
+                    <li>Fecha de nacimiento: 26 de Septiembre de 1971.</li>
+                    <li>Domicilio: Calle 30 - nº 5721.</li>
+                    <li>Código Postal: 3000</li>
+                    <li>Localidad: Santa Fe</li>
+                    <li>Provincia: Santa Fe</li>
+                    <li>País: Argentina</li>
+                </dl>
+            </div>    
+
+            <div class="fila5" id="contacto">
+                <h2 class="subtitulo">Datos para contacto</h2>
+            
+            </div>
+            
+            <div class="fila5"> 
+                <dl> 
+                    <li>Móvil: +54 9 0342 154999999.</li>
+                    <li>E-mail: aii440@hotmail.com</li>
+                </dl>
+            </div>
+ 
+                        
+            <footer class="datos__alumno">
+                <dl>
+                    <li>Página realizada por: José Luis Martínez</li>
+                    <li>DNI 14.305.562</li>
+                    <li>Curso de programación FrontEnd - Academias TICMAS - Argentina Programa</li>
+                </dl>
+            </footer>
+            
+        </div>
+    </div>
+    <section class="modal">
+        <div class="modal__container">
+            <form action="" method="post">
+                <h3>Libro de visitas</h3>
+                <ul>
+                    <li>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" placeholder="Ingrese su nombre"/>
+                    </li>
+                    <li>
+                        <label>Apellido</label>
+                        <input type="text" name="apellido" placeholder="Ingrese su apellido"/>
+                    </li>
+                    <li>
+                        <label>E-mail</label>
+                        <input type="email" name="e_mail" placeholder="Ingrese su dirección e-mail"/>
+                    </li>
+                </ul>
+                <a href="#" class="modal__close" type="submit">Enviar</a>
+            </form>
+            
+        </div>
+    </section>
+    <script src="modal.js"></script>
+</body>
+</html>
